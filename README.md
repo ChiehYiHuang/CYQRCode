@@ -3,9 +3,10 @@
 
 （使用MVVM的架構，並無使用任何第三方套件。）
 
-(生成QRCode圖：CIFilter)
+> 生成QRCode圖：CIFilter)
+> 掃描解析QRCode：AVFoundation Framework)
 
-(掃描解析QRCode：AVFoundation Framework)
+(Creat date: 2016/8/29)
 
 ## Introduce ##
 > Resource 檔案夾：專案中使用到的圖片兒。

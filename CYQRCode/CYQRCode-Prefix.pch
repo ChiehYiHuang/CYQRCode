@@ -1,0 +1,30 @@
+//
+//  CYQRCode-Prefix.pch
+//  CYQRCode
+//
+//  Created by Rebecca on 2016/8/29.
+//  Copyright © 2016年 Rebecca. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+
+
+#pragma mark - Interval
+#define INTERVAL    5
+
+
+#pragma mark - Notification
+#define RSD_NotificationCenter() \
+[NSNotificationCenter defaultCenter]
+
+#define RSD_RegisterNotification(aObserver, aSelector, aName, aObject) \
+[RSD_NotificationCenter() addObserver:aObserver selector:aSelector name:aName object:aObject]
+
+#define RSD_UnregisterNotification(aObserver) \
+[RSD_NotificationCenter() removeObserver:aObserver]
+
+#define RSD_UnregisterNotificationWithName(aObserver, aName, aObject) \
+[RSD_NotificationCenter() removeObserver:aObserver name:aName object:aObject]
+
